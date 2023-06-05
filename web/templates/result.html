@@ -1,0 +1,34 @@
+{% extends "skel.html" %}
+
+{% block body %}
+  <h1>Remove-bang</h1>
+  <div x-data x-show="!$store.jobStatus.ready">
+    <p>Please wait zir, we are removing the background of your image...</p>
+    <p>Your job ID is <code>{{ job_id }}</code></p>
+  </div>
+
+  <div x-data x-show="$store.jobStatus.ready" style="display:none">
+    <p>Here is your image:</p>
+    <div style="max-width: 100%; overflow-y: scroll">
+      <img x-bind:src="$store.jobStatus.url" height="200px" style="border: solid 1px black">
+    </div>
+    <br/>
+    <a x-bind:href="$store.jobStatus.url" role="button">Download</a>
+  </div>
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.store('jobStatus', {ready: false});
+    });
+
+    setInterval(() => {
+      fetch('{{ url_for('job_status', job_id=job_id) }}')
+        .then(response => response.json())
+        .then(data => {
+          Alpine.store('jobStatus', data);
+        })
+    }, 1000);
+  </script>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
