@@ -1,0 +1,37 @@
+services:
+  web:
+    build:
+      context: "web"
+      dockerfile: "Dockerfile"
+    ports:
+      - 7000:7000
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/key.json
+      - REDIS_URL=redis://redis:6379
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672
+    volumes:
+      - ./key.json:/key.json
+    depends_on:
+      - rabbitmq
+      - redis
+
+  bg-remover:
+    build:
+      context: "bg-remover"
+      dockerfile: "Dockerfile"
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/key.json
+      - REDIS_URL=redis://redis:6379
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672
+    volumes:
+      - ./key.json:/key.json
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+      - redis
+
+  redis:
+    image: redis
+
+  rabbitmq:
+    image: rabbitmq
