@@ -1,0 +1,5 @@
+flask
+google-cloud-storage
+gunicorn
+pika
+redis
