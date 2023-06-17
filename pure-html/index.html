@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <div class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Generate Background</a></li>
+                <li><a href="#">How to Use</a></li>
+                <li><a href="#">Scaling Implementation</a></li>
+                <li><a href="#">Credits</a></li>
+            </ul>
+            <svg class="hamburger" width="27" height="18" viewBox="0 0 27 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 18H27V15H0V18ZM0 10.5H27V7.5H0V10.5ZM0 0V3H27V0H0Z" fill="#323232" />
+            </svg>
+
+        </nav>
+        <div class="body-cont">
+            <div class="hero-cont">
+                <h1 class="title-text">Easy Background Generator with Generate-Bang</h1>
+                <p class="para-text">Generate image backgrounds with ease. Upload, edit, and create
+                    stunning images in seconds. Try it now!</p>
+
+                <!-- DROPBOX -->
+                <div class="dropbox">
+                    <button id="fileUploadBtn">
+                        <div class="dropbox-container">
+                            <div class="dropbox-content">
+                                <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_129_210)">
+                                        <path
+                                            d="M28.7939 3.99992H12.7939C10.5939 3.99992 8.81395 5.79992 8.81395 7.99992L8.79395 39.9999C8.79395 42.1999 10.5739 43.9999 12.7739 43.9999H36.7939C38.9939 43.9999 40.7939 42.1999 40.7939 39.9999V15.9999L28.7939 3.99992ZM36.7939 39.9999H12.7939V7.99992H26.7939V17.9999H36.7939V39.9999ZM16.7939 30.0199L19.6139 32.8399L22.7939 29.6799V37.9999H26.7939V29.6799L29.9739 32.8599L32.7939 30.0199L24.8139 21.9999L16.7939 30.0199Z"
+                                            fill="#323232" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_129_210">
+                                            <rect width="48" height="48" fill="white" transform="translate(0.793945)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="text-container">
+                                    <h3 class="title">Upload or drop file</h3>
+                                    <p class="description">Formats allowed: JPG and JPEG</p>
+                                </div>
+                                <input type="file" id="fileInput" multiple accept=".jpg,.jpeg">
+                                <div class="primary-button">
+                                    <p class="browse-text">Browse...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+
+                    <script src="upload-script.js"></script>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="how-to">
+        <h1 class="section-title">How to Use?</h1>
+
+        <div class="carousel">
+            <div class="carousel-container">
+                <!-- Cards -->
+                <div class="card">
+                    <div class="card-header-cont">
+                        <div class="position-header">
+                            <div class="card-header">
+                                <h1 class="card-index">#1</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <img class='icons' src="images/cloud-icon.svg" alt="Icon">
+                        </div>
+                        <div class="card-info">
+                            <h2 class="card-title">Upload Image</h2>
+                            <p class="card-content">To erase background, upload an image to the background remover.
+                                Make sure the image is formatted by JPG or JPEG. Unless of those format, it won’t be
+                                supported by the service.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header-cont">
+                        <div class="position-header">
+                            <div class="card-header">
+                                <h1 class="card-index">#2</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <img class='icons' src="images/background-icon.svg" alt="Icon">
+                        </div>
+                        <div class="card-info">
+                            <h2 class="card-title">Remove Background</h2>
+                            <p class="card-content">A load balancer is a crucial component of modern web infrastructure that distributes network traffic across multiple servers, ensuring optimal performance, reliability, and scalability. By evenly distributing incoming traffic across multiple servers, load balancers can prevent any one server from being overloaded, which can cause downtime or slow response times.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header-cont">
+                        <div class="position-header">
+                            <div class="card-header">
+                                <h1 class="card-index">#3</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <img class='icons' src="images/download-icon.svg" alt="Icon">
+                        </div>
+                        <div class="card-info">
+                            <h2 class="card-title">Download</h2>
+                            <p class="card-content">Once satisfied with the background generator, click 'Save your
+                                photo' to instantly download your finished pictures in PNG image format with various
+                                and transparent backgrounds.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header-cont">
+                        <div class="position-header">
+                            <div class="card-header">
+                                <h1 class="card-index">#4</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <img class='icons' src="images/convert-icon.svg" alt="Icon">
+                        </div>
+                        <div class="card-info">
+                            <h2 class="card-title">Convert Again</h2>
+                            <p class="card-content">Drop another file in the box to convert another file again! It
+                                will be seamless and fun!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="primary-button2" id="tryItNowBtn">Try it now!</button>
+        <input type="file" id="fileInput2" multiple accept=".jpg,.jpeg">
+
+        <script>
+            document.getElementById('tryItNowBtn').addEventListener('click', function () {
+                document.getElementById('fileInput2').click();
+            });
+        </script>
+
+    </div>
+    
+    <div class="scaling-implementation">
+        <h1 class="scaling-title">Scaling Implementation</h1>
+        <p class="section-subtitle">What are the scaling methods that are supporting this service?</p>
+        <div class="scaling-implement-container">
+            <div class="example">
+                <div class="example-image">
+                    <img src="images/load-balancer-image.png" alt="load-balancer-image">
+                </div>
+                <div class="example-info">
+                    <h2 class="example-title">Load Balancer</h2>
+                    <p class="example-content">Load balancing is a technique used to distribute workloads uniformly
+                        across servers or other compute resources to optimize network efficiency, reliability and
+                        capacity. Load balancing can be implemented with hardware, software or a combination of both.
+                    </p>
+            </div>
+            <div class="example">
+                <div class="example-image">
+                    <img src="images/broker-image.png" alt="load-balancer-image">
+                </div>
+                <div class="example-info">
+                    <h2 class="example-title">Broker Solution</h2>
+                    <p class="example-content">A broker solution acts as a mediator, enabling smooth communication and coordination between different entities or systems. It simplifies complex interactions, streamlines processes, and enhances efficiency. With a broker solution, organizations can optimize operations and seamlessly connect with partners, clients, or vendors.
+                    </p>
+            </div>
+        </div>
+
+    </div>
+    
+
+</body>
+
+</html>
