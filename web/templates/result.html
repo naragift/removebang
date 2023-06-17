@@ -3,7 +3,7 @@
 {% block body %}
   <h1>Remove-bang</h1>
   <div x-data x-show="!$store.jobStatus.ready">
-    <p>Please wait zir, we are removing the background of your image...</p>
+    <p>Loading...</p>
     <p>Your job ID is <code>{{ job_id }}</code></p>
   </div>
 
@@ -21,7 +21,7 @@
     });
 
     setInterval(() => {
-      fetch('{{ url_for('job_status', job_id=job_id) }}')
+      fetch('{{ url_for('job_status', job_id=job_id)}}')
         .then(response => response.json())
         .then(data => {
           Alpine.store('jobStatus', data);
