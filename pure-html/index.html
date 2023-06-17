@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
+
 <body>
     <div class="hero">
         <nav class="navbar">
@@ -15,19 +16,19 @@
                 <img src="images/logo.svg" alt="Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#generate-background">Generate Background</a></li>
-                <li><a href="#how-to-use">How to Use</a></li>
-                <li><a href="#scaling-implementation">Scaling Implementation</a></li>
-                <li><a href="#footer">Credits</a></li>
+                <li><a href="#">Generate Background</a></li>
+                <li><a href="#">How to Use</a></li>
+                <li><a href="#">Scaling Implementation</a></li>
+                <li><a href="#">Credits</a></li>
             </ul>
             <svg class="hamburger" width="27" height="18" viewBox="0 0 27 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 18H27V15H0V18ZM0 10.5H27V7.5H0V10.5ZM0 0V3H27V0H0Z" fill="#323232" />
             </svg>
-        </nav>
 
+        </nav>
         <div class="body-cont">
-            <div class="hero-cont" id="generate-background">
+            <div class="hero-cont">
                 <h1 class="title-text">Easy Background Generator with Generate-Bang</h1>
                 <p class="para-text">Generate image backgrounds with ease. Upload, edit, and create
                     stunning images in seconds. Try it now!</p>
@@ -68,7 +69,7 @@
 
         </div>
     </div>
-    <div class="how-to" id="how-to-use">
+    <div class="how-to">
         <h1 class="section-title">How to Use?</h1>
 
         <div class="carousel">
@@ -165,103 +166,35 @@
 
     </div>
     
-    <div>
-
-        <div class="scaling-implementation" id="scaling-implementation">
-            <h1 class="scaling-title">Scaling Implementation</h1>
-            <p class="section-subtitle">What are the scaling methods that are supporting this service?</p>
-            <div class="scaling-implement-container">
-                <div class="example">
-                    <div class="example-image">
-                        <img src="images/load-balancer-image.png" alt="load-balancer-image">
-                    </div>
-                    <div class="example-info">
-                        <h2 class="example-title">Load Balancer</h2>
-                        <p class="example-content">Load balancing is a technique used to distribute workloads uniformly
-                            across servers or other compute resources to optimize network efficiency, reliability and
-                            capacity. Load balancing can be implemented with hardware, software or a combination of both.
-                        </p>
+    <div class="scaling-implementation">
+        <h1 class="scaling-title">Scaling Implementation</h1>
+        <p class="section-subtitle">What are the scaling methods that are supporting this service?</p>
+        <div class="scaling-implement-container">
+            <div class="example">
+                <div class="example-image">
+                    <img src="images/load-balancer-image.png" alt="load-balancer-image">
                 </div>
-                <div class="example">
-                    <div class="example-image">
-                        <img src="images/broker-image.png" alt="load-balancer-image">
-                    </div>
-                    <div class="example-info">
-                        <h2 class="example-title">Broker Solution</h2>
-                        <p class="example-content">A broker solution acts as a mediator, enabling smooth communication and coordination between different entities or systems. It simplifies complex interactions, streamlines processes, and enhances efficiency. With a broker solution, organizations can optimize operations and seamlessly connect with partners, clients, or vendors.
-                        </p>
+                <div class="example-info">
+                    <h2 class="example-title">Load Balancer</h2>
+                    <p class="example-content">Load balancing is a technique used to distribute workloads uniformly
+                        across servers or other compute resources to optimize network efficiency, reliability and
+                        capacity. Load balancing can be implemented with hardware, software or a combination of both.
+                    </p>
+            </div>
+            <div class="example">
+                <div class="example-image">
+                    <img src="images/broker-image.png" alt="load-balancer-image">
                 </div>
+                <div class="example-info">
+                    <h2 class="example-title">Broker Solution</h2>
+                    <p class="example-content">A broker solution acts as a mediator, enabling smooth communication and coordination between different entities or systems. It simplifies complex interactions, streamlines processes, and enhances efficiency. With a broker solution, organizations can optimize operations and seamlessly connect with partners, clients, or vendors.
+                    </p>
             </div>
         </div>
+
     </div>
     
-    <footer>
-        <div class="footer-container" id='footer'>
-            <div class="footer-logo">
-                <div class="logo">
-                    <img src="images/logo.svg" alt="Logo">
-                </div>
-            </div>
-            <div>
 
-            </div>
-
-            <!-- <div class="footer-cont"> -->
-                <!-- </div> -->
-            </div>
-            <div class="footer-sub-container">
-    
-                <div class="footer-content">
-                    <h3 class="content-title">Credits to</h3>
-                    
-                    <ul>
-                        <li class="content">Rachel Naragifta</li>
-                        <hr class="line">
-                        <li class="content">Fidzal Adrian</li>
-                        <hr class="line">
-                        <li class="content">Gelora Damayanti Manalu</li>
-                        <hr class="line">
-
-                    </ul>
-                </div>
-    
-                <div class="footer-content">
-                    <h3 class="content-title">Jump to</h3>
-                    
-                    <ul class="">
-                        <li class="content"><a href="#generate-background">Generate Background</a></li>
-                        <hr class="line">
-                        <a href="#how-to-use">How to Use</a>
-                        <li class="content"></li>
-                        <hr class="line">
-                        <a href="#scaling-implementation">Scaling Implementation</a>
-                        <li class="content"></li>
-                        <hr class="line">
-
-                    </ul>
-                </div>
-                
-            </div>
-            <div class="copyright">
-                <p>© All Right Reserved 2023</p>
-            </div>
-    </footer>
-
-    
-    <script>
-        // Smooth scrolling functionality
-        document.querySelectorAll('.navbar a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-    
 </body>
 
 </html>
