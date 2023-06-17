@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.title-cont {
+    margin: 0;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+
+.sub-title-cont {
+    display: flex; 
+    margin-left: 4rem;
+    margin-right: 4rem; 
+    flex-direction: column; 
+    justify-content: center; 
+    height: 100vh; 
+}
+.title-text{
+    font-size: 1.875rem;
+    line-height: 2.25rem; 
+    font-weight: 900; 
+}
+
+.para-text{
+    margin-top: 1.5rem; 
+    margin-bottom: 2rem; 
+
+
+}
